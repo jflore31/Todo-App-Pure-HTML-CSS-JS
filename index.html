@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo App</title>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" 
-    rel="stylesheet"
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:400,600&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <h1>My Todo Application</h1>
-            <div class="form">
-                <input type="text" placeholder="New Todo">
-                <button>Add</button>
-            </div>
+      <div class="header">
+        <h1 class="title">My Todo Application</h1>
+        <div class="form">
+          <input id="newText" type="text" placeholder="New Todo" />
+          <button id="newBtn">Add</button>
         </div>
-        <div class="todos">
-            <div class="pendings">
-                <h3>Pendings:</h3>
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                </ul>
-            </div>
-            <div class="completed">
-                <h3>Completed:</h3>
-                <ul>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
-                </ul>
-            </div>
+      </div>
+      <div class="todos">
+        <div class="pendings">
+          <h3>Pendings:</h3>
+          <ul id="pendingList"></ul>
         </div>
+        <div class="completed">
+          <h3>Completed:</h3>
+          <ul id="completedList"></ul>
+        </div>
+      </div>
     </div>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
